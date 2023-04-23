@@ -1,0 +1,8 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.projects {
+  @include swiper;
+  height: 23em;
+  max-height: 60vh;
+}

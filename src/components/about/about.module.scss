@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.about {
+  @include flex-center;
+  @include container;
+  gap: 3em;
+
+  color: $grey-secondary;
+
+  &__img {
+    width: 40%;
+
+    @media (max-width: $sm-max) {
+      display: none;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  &__caption {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: $orange-primary;
+  }
+  &__title {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    color: $grey-primary;
+  }
+  &__list {
+    @include flex-center;
+    justify-content: space-between;
+  }
+  &__item {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__number {
+    font-size: 4rem;
+    line-height: 4.7rem;
+    color: $grey-primary;
+  }
+  &__number--orange {
+    color: $orange-primary;
+  }
+}

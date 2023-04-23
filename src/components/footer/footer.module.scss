@@ -1,0 +1,93 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.footer {
+  @include container;
+  padding: 0;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  color: $white-primary;
+
+  &__container {
+    width: 100%;
+    background: $grey-primary;
+    margin-top: 9.4em;
+    padding: 8em 0em;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3em;
+  }
+  &__caption {
+    font-size: 1.5rem;
+  }
+  &__copy {
+    opacity: 0.6;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    color: $white-primary;
+  }
+  &__menu {
+    margin-top: 1.1em;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  &__item {
+    list-style-type: none;
+  }
+  &__link {
+    @include link;
+    color: $white-primary;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    width: 290px;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    padding: 1.5em;
+
+    font-size: 0.8rem;
+    line-height: 1rem;
+
+    border: $orange-primary 0.1em solid;
+    box-sizing: border-box;
+  }
+  &__icon {
+    @include flex-center;
+    width: 3.2em;
+    height: 3.2em;
+    background: $orange-primary;
+    flex-shrink: 0;
+  }
+  @media (max-width: $sm-max) {
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+}

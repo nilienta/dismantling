@@ -1,0 +1,25 @@
+@import '../../assets/fonts/fonts.css';
+@import '../../variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+
+  @media (min-width: $lg-min) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  @media (max-width: $md-max) and (min-width: $md-min) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media (max-width: $sm-max) {
+    font-size: 8px;
+    line-height: 14px;
+  }
+}

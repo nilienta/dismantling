@@ -1,0 +1,30 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin container {
+  max-width: $max-width;
+  margin: 0px auto;
+  padding: 1em;
+  padding-top: 6.4em;
+}
+@mixin link {
+  color: $grey-primary;
+  text-decoration: none;
+
+  background-image: linear-gradient($orange-primary, $orange-primary);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+
+  &:hover {
+    background-size: 100% 1px;
+  }
+}
+@mixin swiper {
+  width: 90vw;
+  max-width: $max-width;
+  max-height: 60vh;
+}

@@ -1,0 +1,46 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+.card {
+  @include flex-center;
+  width: 90vw;
+  max-width: 900px;
+  height: 100%;
+  margin: 0px auto;
+
+  .card__img {
+    width: 16em;
+    height: 16em;
+    object-fit: cover;
+  }
+  .card__text {
+    width: 60%;
+    margin: 0.8em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+  }
+  .card__title {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    color: $grey-primary;
+  }
+  .card__desc {
+    color: $grey-secondary;
+  }
+  .card__signed {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  .card__name {
+    line-height: 1.1rem;
+    color: $grey-primary;
+  }
+  .card__city {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+    color: $grey-secondary;
+  }
+}
